@@ -122,6 +122,11 @@
             font-size: 14px;
             padding: 5px;
         }
+
+        .gif-container {
+            text-align: center;  /* Centers the GIF */
+            margin: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -142,8 +147,8 @@
 
     <section id="quicklinks">
         <div class="blurb">
-            <a href="docs/LawrenceCV_2025.pdf" target="_blank">Click here to view my CV</a><br>
-            <a href="https://github.com/jaccl17/imageland" target="_blank">Click here to view <em>imageland</em>, my personal repo with image processing scripts and algorithms</a>
+            <a href="docs/LawrenceCV_2025.pdf" target="_blank">Click to view my CV</a><br>
+            <a href="https://github.com/jaccl17/imageland" target="_blank">Click to view <em>imageland</em>, my personal repo with image processing scripts and algorithms</a>
         </div>
     </section>
 
@@ -156,12 +161,14 @@
                 developed at UnitX as a Vision Technician in order to improve our machine vision capabilities. 
                 The algorithm is comprised of two deep learning (DL) models: a convolutional autoencoder that maps images into an N-dimensional feature
                 space and a clustering layer that learns to categorize this feature layer by associating
-                the learned nodes with the input images.<br>
+                the learned nodes with the input images.</p>
+            <p>
                 In the example attached below, I use the MNIST handwritten digit library to showcase the accuracy and flexibility,
                 though in it's practical application, MDEC is used used to improve a machine vision system's ability to detect defects (or features). I suggest reseach applications of this model
-                in the README/overview also seen below, particularly related to large astrophysical data surveys. <br>
+                in the README/overview also seen below, particularly related to large astrophysical data surveys. </p>
+            <p>
                 MDEC is a succesor of the original Deep Embedded Clustering (DEC) algorithm, developed by Xie et al. in 2016. Notable improvements to the original algorithm include:
-                a convolutional autoencoder that preserves 2D data structure, with max pooling, as it translates a image to the feature space [\ref{fig:ae_example}]
+                a convolutional autoencoder that preserves 2D data structure, with max pooling, as it translates a image to the feature space
                 <ul>
                     <li>more metrics to increase insight into both the autoencoder and cluster training progress</li>
                     <li>increased visibility into the clustering progress through epoch graphics and gifs </li>
@@ -172,9 +179,14 @@
                     <li>and a `test_station' script that allows the user to visualize live (or historical) metrics, as well try out and adjust the autoencoder parameters (start here, it's fun)</li>
                 </ul>
                 <br>
-                <a href="docs/MDEC_combined.html" target="_blank">View the MDEC algorithm code in a readable walkthrough</a>
-                <a href="docs/MDEC_README.pdf" target="_blank">View the MDEC_README, including a performance overview and example use-cases for astrophysics research</a>
+                <a href="docs/MDEC_combined.html" target="_blank">Click to view the MDEC algorithm code in a readable walkthrough</a>
+                <a href="docs/MDEC_README.pdf" target="_blank">Click to view the MDEC_README, including a performance overview and example use-cases for astrophysics research</a>
+                <a href="docs/mdec_model.png" target="_blank">Click to view the simplified structure of MDEC</a>
             </p>
+            <br>
+            <div class="gif-container">
+                <img src="docs/map.gif" alt="Visualize the clustering progress as the algorithm learns to distinguish images" style="max-width: 80%;">
+            </div>
         </div>
         
         <div class="project">
@@ -191,7 +203,7 @@
                 and includes a Na-22 coincidence test with HPGe detectors, as well as spectroscopy experiments with Co-60, Cf-252 with an HPGe detector, a Gd-loaded liquid scintillator, an Si detector and PMT
                 to validate performance. <br>
                 </p>
-            <a href="docs/j_mvme_documentation-compressed.pdf" target="_blank">View project report and documentation</a>
+            <a href="docs/j_mvme_documentation-compressed.pdf" target="_blank">Click to view project report and documentation</a>
             <p><span style="font-size: 12px;">Note: This project is a culmination of work done both at Triangle Universities Nuclear Laboratories (TUNL) and Lawrence Livermore National Laboratory (LLNL). Some information has been redacted in compliance
                 expor control agreements.</span></p>
         </div>
