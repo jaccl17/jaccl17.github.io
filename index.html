@@ -216,15 +216,15 @@
                 in the README/overview also seen below, particularly related to large astrophysical data surveys. </p>
             <p>
                 MDEC is a succesor of the original Deep Embedded Clustering (DEC) algorithm, developed by Xie et al. in 2016. Notable improvements to the original algorithm include:
-                a convolutional autoencoder that preserves 2D data structure, with max pooling, as it translates a image to the feature space
                 <ul>
+                    <li>a convolutional autoencoder that preserves 2D data structure, with max pooling, as it translates a image to the feature space</li>
                     <li>more metrics to increase insight into both the autoencoder and cluster training progress</li>
                     <li>increased visibility into the clustering progress through epoch graphics and gifs </li>
                     <li>a learning rate scheduler that decreases the likelihood of cluster convergence on local minima </li>
                     <li>the added option of augmenting input data (random rotations and contrast adjustments) for increased training variety</li>
                     <li>expanded warnings and notifications for all processes (helpful for debugging)</li>
                     <li>updated and reorganized logging with pandas</li>
-                    <li>and a `test_station' script that allows the user to visualize live (or historical) metrics, as well try out and adjust the autoencoder parameters (start here, it's fun)</li>
+                    <li>and a `test station' script that allows the user to visualize live (or historical) metrics, as well try out and adjust the autoencoder parameters (start here, it's fun)</li>
                 </ul>
                 <br>
                 <a href="docs/MDEC_combined.html" target="_blank">Click to view the MDEC algorithm code in a readable walkthrough</a> <br>
