@@ -149,18 +149,18 @@
             position: relative;
             overflow: hidden;
             border-radius: 3px;
-            margin-bottom: 5px; /* Reduced space below container */
-            display: flex; /* New: enables centering */
-            justify-content: center; /* New: horizontal center */
-            align-items: center; /* New: vertical center */
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .lone-image img {
             position: absolute;
             width: 80%;
             height: 80%;
-            object-fit: cover;
-            object-position: center; 
+            object-fit: contain;
+            /*object-position: center;*/
         }
 
         .lone-caption {
