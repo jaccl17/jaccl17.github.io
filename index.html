@@ -143,9 +143,10 @@
         }
 
         .lone-image {
-            width: 80%;
-            height: 80%;
-            padding-bottom: 100%;
+            width: 80%; /* Shrink container width */
+            margin: 0 auto; /* Center horizontally */
+            height: 0;
+            padding-bottom: 80%; /* Maintain aspect ratio (square) */
             position: relative;
             overflow: hidden;
             border-radius: 3px;
