@@ -113,26 +113,26 @@ h1.mini {
 
 h2 {
     font-size: 34px;
-    color: #2199ea;
+    color: #4B9CD3;
     text-shadow: 0 0 6px #0b0e18c0;
     margin-top: 15px;
     margin-bottom: 2px;
 }
 
 h3 {
-    color: #60a5d3;
+    color: #4B9CD3;
 }
 
 h4 {
     font-size: 24px;
-    color: #2199ea;
+    color: #4B9CD3;
     text-shadow: 0 0 6px #0b0e18c0;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
 h5 {
-    color: #60a5d3;
+    color: #4B9CD3;
 }
 
 .project h3 {
