@@ -66,7 +66,6 @@ a:hover {
     text-shadow: 0 0 6px #6cb9ec86;
     font-size: 1.2rem;
     margin: 0 15px;
-    padding: 5px 0;
     position: relative;
     transition: color 0.3s ease;
     font-weight: bold
@@ -76,6 +75,7 @@ a:hover {
     content: "|";
     color: #051280;
     position: absolute;
+    right: -15px
 }
   
 .main-nav a.active {
