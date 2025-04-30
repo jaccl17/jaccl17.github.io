@@ -55,13 +55,38 @@ a:hover {
     text-decoration: underline;
 }
 
-a.nav_format {
-    font-size: 20px;
-    color: #2199ea;
-    text-shadow: 0 0 6px #0b0e18c0;
-    margin-top: 15px;
-    margin-bottom: 2px;
+.main-nav {
     text-align: center;
+    margin: 20px 0;
+    font-family: Tahoma, sans-serif;
+}  
+
+.main-nav a {
+    color: #FF6B6B; /* Custom link color (coral) */
+    font-size: 1.2rem;
+    margin: 0 15px; /* Spacing between links */
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+  
+  /* Pipe separators between links */
+.main-nav a:not(:last-child)::after {
+    content: "|";
+    color: #CCCCCC; /* Pipe color */
+    position: absolute;
+    right: -17px;
+}
+  
+  /* Hover effect */
+.main-nav a:hover {
+    color: #4ECDC4; /* Hover color (teal) */
+}
+  
+
+.main-nav a.active {
+    font-weight: bold;
+    border-bottom: 2px solid #FF6B6B;
 }
 
 .pdf-container {
