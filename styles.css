@@ -71,13 +71,6 @@ a:hover {
     font-weight: bold
 }
   
-.main-nav a:not(:last-child)::after {
-    content: "|";
-    color: #051280;
-    position: absolute;
-    right: -15px
-}
-  
 .main-nav a.active {
     border-bottom: 2px solid #FF6B6B !important;
 }
