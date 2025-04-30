@@ -62,7 +62,8 @@ a:hover {
 }  
 
 .main-nav a {
-    color: #2199ea;
+    color: #ffffff;
+    text-shadow: 0 0 6px #176ba3;
     font-size: 1.2rem;
     margin: 0 15px;
     padding: 5px 0;
@@ -74,14 +75,13 @@ a:hover {
   /* Pipe separators between links */
 .main-nav a:not(:last-child)::after {
     content: "|";
-    color: #2199ea; /* Pipe color */
+    color: #ffffff; /* Pipe color */
     position: absolute;
     right: -17px;
 }
   
 .main-nav a.active {
-    font-weight: bold;
-    border-bottom: 2px solid #FF6B6B;
+    border-bottom: 2px solid #FF6B6B !important;
 }
 
 .pdf-container {
