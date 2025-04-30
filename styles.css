@@ -76,7 +76,6 @@ a:hover {
     content: "|";
     color: #051280;
     position: absolute;
-    right: -17px;
 }
   
 .main-nav a.active {
