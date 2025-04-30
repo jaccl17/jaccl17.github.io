@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Jack Lawrence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="education.html">Education and Certifications</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Personal Gallery</a>
+    </nav>
+
+    <main>
+        <section id="projects">
+            <h2>Notable Projects</h2>
+            
+            <div class="project">
+                <h3>Modernized Deep Imbedded Clustering (MDEC)</h3>
+                <h5>Unsupervised Machine Learning | UnitX Labs</h5>
+                <p>The Modernized Deep Embedded Clustering (MDEC) is a framework and tool that I
+                    developed at UnitX as a Vision Technician in order to improve our machine vision capabilities. 
+                    The algorithm is comprised of two deep learning (DL) models: a convolutional autoencoder that maps images into an N-dimensional feature
+                    space and a clustering layer that learns to categorize this feature layer by associating
+                    the learned nodes with the input images.</p>
+                <p>
+                    In the example attached below, I use the MNIST handwritten digit library to showcase the accuracy and flexibility,
+                    though in it's practical application, MDEC is used used to improve a machine vision system's ability to detect defects (or features). I suggest reseach applications of this model
+                    in the README/overview also seen below, particularly related to large astrophysical data surveys. </p>
+                <p>
+                    MDEC is a succesor of the original Deep Embedded Clustering (DEC) algorithm, developed by Xie et al. in 2016. Notable improvements to the original algorithm include:
+                    <ul>
+                        <li>a convolutional autoencoder that preserves 2D data structure, with max pooling, as it translates a image to the feature space</li>
+                        <li>more metrics to increase insight into both the autoencoder and cluster training progress</li>
+                        <li>increased visibility into the clustering progress through epoch graphics and gifs </li>
+                        <li>a learning rate scheduler that decreases the likelihood of cluster convergence on local minima </li>
+                        <li>the added option of augmenting input data (random rotations and contrast adjustments) for increased training variety</li>
+                        <li>expanded warnings and notifications for all processes (helpful for debugging)</li>
+                        <li>updated and reorganized logging with pandas</li>
+                        <li>and a `test station' script that allows the user to visualize live (or historical) metrics, as well try out and adjust the autoencoder parameters (start here, it's fun)</li>
+                    </ul>
+                    <br>
+                    <a href="docs/MDEC_combined.html" target="_blank">Click to view the MDEC algorithm code in a readable walkthrough</a> <br>
+                    <a href="docs/MDEC_README.pdf" target="_blank">Click to view the MDEC_README, including a performance overview and example research use-cases</a> <br>
+                    <a href="docs/mdec_model.png" target="_blank">Click to view the simplified structure of MDEC</a>
+                </p>
+                <br>
+                <div class="gif-container">
+                    <img src="docs/map_delayed.gif" alt="clustering gif" style="max-width: 80%;">
+                </div>
+                <div class="gif-caption">Visualize how the algorithm clusters samples into distinguished groups as it trains</div>
+            </div>
+            
+            <div class="project">
+                <h3>j_mvme</h3>
+                <h5>Data Acquisition System for Nuclear Experimentation | Lawrence Livermore National Laboratory</h5>
+                <p>My first research experience involved developing data acqusition (DAQ) software and equipment for nuclear experimentation. The DAQ program <em>j_mvme</em> is a customized version of
+                    <em><a href="https://www.mesytec.com/downloads/mvme.html" target="_blank">mvme</a></em>, which is the original open-source DAQ program. Notable improvements include:
+                    <ul>
+                        <li><em>Multi-window View</em> for 1D histograms - up to 32 detectors can be viewed at once in real-time</li>
+                        <li><em>Multi-window View</em> for 2D histograms - up to 32 detector coincidences can be viewed at once in real-time</li>
+                        <li>Streamlined creation of 2D histograms - up to 32 coincidence histograms can be populated at once by aligning input channels</li>
+                        <li>Threshold value imports - gate values on input channels can be specified in a <tt>'.txt'</tt> file and imported directly</li>
+                    </ul>
+                    My enhancements largely focused on flexibility, especially in experiments with multiple detectors and/or modules. Attached below is a report overviewing my changes in more detail, 
+                    and includes a Na-22 coincidence test with HPGe detectors, as well as spectroscopy experiments with Co-60, Cf-252 with an HPGe detector, a Gd-loaded liquid scintillator, an Si detector and PMT
+                    to validate performance. <br>
+                    </p>
+                <a href="docs/j_mvme_documentation-compressed.pdf" target="_blank">Click to view project report and documentation</a>
+                <p class="note-container">Note: This project is a culmination of work done both at Triangle Universities Nuclear Laboratories (TUNL) and Lawrence Livermore National Laboratory (LLNL). Some information has been redacted
+                     in compliance with export control agreements.</p>
+            </div>
+    
+            <div class="project">
+                <h3>Live-streaming the Sun: Configuring an H-Alpha Telescope at Morehead Planetarium</h3>
+                <h5>Astronomy Instrumentation | The University of North Carolina at Chapel Hill and Morehead Planetarium</h5>
+                <p>What began as a group project in my undergrad Observational Astronomy course, became an independent research project under in my senior year at UNC. My professor proposed to our classthat involved mounting 
+                    a Coronado 90mm SolarMax II Solar Telescope (with two blocking filters) to a viewing deck at Morehead Planetarium and Science Center. Together we configured the telescope with a Raspberry Pi, accesible on a private server
+                    that controlled the CMOS camera responsible for image capture and the software in charge of stacking and wavelet tuning. In my independent work, I added servos motors for remote-controlled etalon tuning, a weatherproof housing
+                    with a servo-operated hood, and implemented Photoshop contrast and brightness control for more detailed final images. </p>
+                <p>
+                    While the motivations of the project revolved around putting use to an expensive telescope donated by a patron of Morehead Planetarium, the H-Alpha telescope serves as a tool for public education as well for furture under/graduate
+                    research theses. </p>
+    
+                <p><a href="docs/H-Alpha_project_poster.pdf" target="_blank">Click to view the full project poster</a></p>
+    
+                <p>
+                    The following images detail steps in the image processing workflow and showcase our Sun on March 11, 2023 at approximately 14:37 (EST) in Chapel Hill, North Carolina, USA (35.913864, -79.050170).
+                </p>
+                
+                <div class="lone-image">
+                    <img src="sun_pics/sun_raw.png" alt="single frame">
+                </div>
+                <div class="lone-caption">Single, raw frame</div>
+            
+                <div class="lone-image">
+                    <img src="sun_pics/sun_stacked_wavelets.png" alt="stacked, wavelet sharpened">
+                </div>
+                <div class="lone-caption">1000 frames, stacked, and wavelet-sharpened</div>
+            
+                <div class="lone-image">
+                    <img src="sun_pics/sun_final.png" alt="contrast, brightness adjustments">
+                </div>
+                <div class="lone-caption">Final image after contrast and brightness adjustments</div>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>
