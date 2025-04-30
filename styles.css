@@ -62,28 +62,23 @@ a:hover {
 }  
 
 .main-nav a {
-    color: #FF6B6B; /* Custom link color (coral) */
+    color: #2199ea;
     font-size: 1.2rem;
-    margin: 0 15px; /* Spacing between links */
+    margin: 0 15px;
     padding: 5px 0;
     position: relative;
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease;
+    font-weight: bold
 }
   
   /* Pipe separators between links */
 .main-nav a:not(:last-child)::after {
     content: "|";
-    color: #CCCCCC; /* Pipe color */
+    color: #2199ea; /* Pipe color */
     position: absolute;
     right: -17px;
 }
   
-  /* Hover effect */
-.main-nav a:hover {
-    color: #4ECDC4; /* Hover color (teal) */
-}
-  
-
 .main-nav a.active {
     font-weight: bold;
     border-bottom: 2px solid #FF6B6B;
