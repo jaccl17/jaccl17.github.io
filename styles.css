@@ -63,7 +63,7 @@ a:hover {
 
 .main-nav a {
     color: #051280;
-    text-shadow: 0 0 6px #071a26;
+    text-shadow: 0 0 6px #6cb9ec86;
     font-size: 1.2rem;
     margin: 0 15px;
     padding: 5px 0;
@@ -74,7 +74,7 @@ a:hover {
   
 .main-nav a:not(:last-child)::after {
     content: "|";
-    color: #051280; /* Pipe color */
+    color: #051280;
     position: absolute;
     right: -17px;
 }
@@ -126,7 +126,7 @@ h3 {
 h4 {
     font-size: 24px;
     color: #2199ea;
-    text-shadow: 0 0 3px #6cb9ec86;
+    text-shadow: 0 0 6px #0b0e18c0;
 }
 
 h5 {
