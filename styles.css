@@ -127,6 +127,8 @@ h4 {
     font-size: 24px;
     color: #2199ea;
     text-shadow: 0 0 6px #0b0e18c0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 h5 {
